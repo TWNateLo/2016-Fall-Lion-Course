@@ -26,42 +26,20 @@ int main () {
 
 
 	//Showing Month at Title
-	if(m == 1) {
-		printf("January");
-	}
-	else if(m == 2) {
-		printf("Feburary");
-	}
-	else if(m == 3) {
-		printf("March");
-	}
-	else if(m == 4) {
-		printf("April");
-	}
-	else if(m == 5) {
-		printf("May");
-	}
-	else if(m == 6) {
-		printf("June");
-	}
-	else if(m == 7) {
-		printf("July");
-	}
-	else if(m == 8) {
-		printf("August");
-	}
-	else if(m == 9) {
-		printf("September");
-	}
-	else if(m == 10) {
-		printf("October");
-	}
-	else if(m == 11) {
-		printf("November");
-	}
-	else if(m == 12) {
-		printf("December");
-	}
+	switch (m) {
+		case 1: printf("January\n");
+		case 2: printf("Feburary\n");
+		case 3: printf("March\n");
+		case 4: printf("April\n");
+		case 5: printf("May\n");
+		case 6: printf("June\n");
+		case 7: printf("July\n");
+		case 8: printf("August\n");
+		case 9: printf("September\n");
+		case 10: printf("October\n");
+		case 11: printf("November\n");
+		case 12: printf("December\n");
+  }
 
 
 	//Printing the calendar of single month
