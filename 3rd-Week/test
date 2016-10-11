@@ -4,12 +4,12 @@ int main () {
         int Febd = 28;
         int z, i;
 
-        int blank[12] = {w, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-        int days[12] = {31, Febd, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        int blank[13] = {0, w, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+        int days[13] = {0, 31, Febd, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         for (z = 1; z < 12; z++) {
-                blank[z] = (w + days[z - 1]) % 7;
+                blank[z + 1] = (blank[z] + days[z]) % 7;
         }
-        for(i = 0; i < 12; i++){
+        for(i = 1; i < 13; i++){
         printf("%d\n", blank[i]);
         }
 }
