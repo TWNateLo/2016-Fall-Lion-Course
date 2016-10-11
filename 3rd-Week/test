@@ -1,1 +1,15 @@
-test
+#include <stdio.h>
+int main () {
+        int w = 1;
+        int Febd = 28;
+        int z, i;
+
+        int blank[12] = {w, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+        int days[12] = {31, Febd, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        for (z = 1; z < 12; z++) {
+                blank[z] = (w + days[z - 1]) % 7;
+        }
+        for(i = 0; i < 12; i++){
+        printf("%d\n", blank[i]);
+        }
+}
